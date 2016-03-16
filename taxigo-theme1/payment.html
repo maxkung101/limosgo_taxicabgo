@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Payment</title>
+<link rel="stylesheet" href="themes/taxigo.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+  <div data-role="header" bgcolor="#0966a5" text="#FFFFFF">
+    <h1><strong>Payment Details</strong></h1>
+  </div>
+  <div data-role="content">
+    <p align="center">Your credit card won't be charged until you book a trip</p>
+    <input type="text" name="fullname" id="fullname" placeholder="Name in Card"/>
+    <select name="menu1" id="menu1">
+          <option value="---"></option>
+          <option value="option1">null</option>
+        </select>
+    <input type="text" name="cardnumber" id="cardnumber" placeholder="Card Number"/>
+    <select name="menu2" id="menu2" width="50%">
+          <option value="---">January</option>
+          <option value="option1">null</option>
+        </select>
+    <select name="menu3" id="menu3" width="50%">
+          <option value="---">2015</option>
+          <option value="option1">null</option>
+        </select>
+    <input type="text" name="cvv" id="cvv" placeholder="CVV"/><label for="cvv">CVV is not saved for security reasons</label>
+    <div data-role="content" data-theme="a" bgcolor="#d5f0f6">
+      <p><strong>Auto Charge:</strong> (Check one of the boxes below if you wish for Carmel to always use this card to pay for your Carmel ride)</p>
+      <label for="c1"><strong>All Inclusive:</strong> When Auto Charging, charge the <u>all inclusive rate</u> (the base fare plus tolls, fees and 20% gratuities)</label>
+          <input type="checkbox" name="favbox1" id="c1" value="c1"/>
+      <label for="c2"><strong>Base Fare Only:</strong> When Auto Charging, charge <u>only the basic fare.</u> I will pay the tolls, fees and gratuities directly to the driver</label>
+          <input type="checkbox" name="favbox2" id="c2" value="c2"/>
+      <p>*Applicable Car Cash will be used when Auto Charge is selected</p>
+    </div>
+    Billing Address
+  </div>
+
+</div> 
+
+</body>
+</html>

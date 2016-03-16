@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Information</title>
+<link rel="stylesheet" href="themes/taxigo.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+	<div data-role="header" bgcolor="#0966a5" text="#FFFFFF">
+		<h1><strong>Personal Information</strong></h1>
+	</div>
+
+	<div data-role="content"><form action="#">
+		<p>First Name<input type="text" name="firstname" id="firstname"/></p>
+		<p>Last Name<input type="text" name="lastname" id="lastname"/></p>
+		<p>Email Address<input type="text" name="email" id="email"/></p>
+		<p>
+			<strong>Mobile</strong>
+			<table width="100%">
+				<tr>
+					<td>Country Code</td>
+					<td>Area Code</td>
+					<td>Phone Number</td>
+				</tr>
+				<tr>
+					<td><input type="number"></td>
+					<td><input type="number"></td>
+					<td><input type="number"></td>
+				</tr>
+			</table>
+		</p>
+		<p>
+			<strong>ICE Mobile - In case of emergency (optional)</strong><br/>
+			(Provide a 2nd number you wish us to inform app activity to)
+			<table width="100%">
+				<tr>
+					<td>Country Code</td>
+					<td>Area Code</td>
+					<td>Phone Number</td>
+				</tr>
+				<tr>
+					<td><input type="number"></td>
+					<td><input type="number"></td>
+					<td><input type="number"></td>
+				</tr>
+			</table>
+		</p>
+		<label for="post">Post trips in my calendar</label><input type="checkbox" name="post" id="post" value="post"><br/>
+		<input type="submit" class="btn_sign" value="Save"/>
+	</form></div>
+
+</div> 
+
+</body>
+</html>
